@@ -45,6 +45,8 @@ class WeatherProvider extends ChangeNotifier {  // it is use to maanage & and no
       throw e.toString();
     }
 
+    
+
 // Create a ShakeDetector instance
     // final ShakeDetector detector = ShakeDetector.waitForStart(
     //   onPhoneShake: () {

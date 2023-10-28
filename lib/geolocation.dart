@@ -72,15 +72,16 @@ class _WeatherAppState extends State<WeatherApp> {
           cityName += ', IN';
 
           // Provide the city name to the WeatherProvider
-          _provider.cityName = cityName;
-
+         _provider.cityName = cityName;
+        
           // Print the city name
           print(cityName);
 
           _provider.fetchWeather(cityName);
           _provider.notifyListeners();
         });
-      } else {
+      } 
+          else {
         setState(() {
           _error =
               'Error fetching weather data. Status code: ${response.statusCode}';
