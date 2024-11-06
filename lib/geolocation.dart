@@ -6,8 +6,6 @@ import 'dart:convert';
 import 'package:geolocator/geolocator.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-const String openWeatherApiKey = 'c615d2b917d78bdd79fadb464a5c8680'; //  API key
-
 class WeatherApp extends StatefulWidget {
   @override
   _WeatherAppState createState() => _WeatherAppState();
@@ -55,7 +53,7 @@ class _WeatherAppState extends State<WeatherApp> {
   Future<void> _fetchWeatherData(double lat, double lon) async {
     try {
       final response = await http.get(Uri.parse(
-          'https://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$lon&appid=$openWeatherApiKey'));
+          'https://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$lon&appid=$OpenWeatherApiKey'));
 
       if (response.statusCode == 200) {
         setState(() {
