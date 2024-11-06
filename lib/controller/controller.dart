@@ -1,4 +1,4 @@
-import 'package:gaurav_app/secrets.dart';
+import 'package:gaurav_app/Secret.dart';
 import 'package:location_geocoder/location_geocoder.dart';
 import 'package:flutter/material.dart';
  
